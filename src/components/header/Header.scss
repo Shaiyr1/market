@@ -1,0 +1,71 @@
+.header {
+    padding: 0 48px;
+
+    &__nav {
+        padding: 30px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &-logo {
+            width: 300px;
+            height: 70px;
+        }
+    }
+
+    &__ul {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+
+        &-link {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            font-family: Inter;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16.8px;
+            letter-spacing: 0%;
+            text-align: left;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.header__ul-link {
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.header__ul-link:hover {
+    color: #007BFF; // Цвет при наведении
+}
+
+
+@media (max-width: 1024px) {
+    .header__nav-logo {
+        width: 239px;
+        height: 56px;
+    }
+
+    .header__ul {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header__nav-logo {
+        width: 155px;
+        height: 31px;
+    }
+}
+@media (max-width: 660px) {
+    .header__ul-li {
+        display: none;
+    }
+}
